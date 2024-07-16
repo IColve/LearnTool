@@ -99,6 +99,29 @@ public class ToolLearnWindow : EditorWindow
             ChangeShowStr();
             Repaint();
         }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            if (!_isShow)
+            {
+                return;
+            }
+
+            if (_currentIndex < 0)
+            {
+                return;
+            }
+
+            if (_currentIndex - 1 < 0)
+            {
+                return;
+            }
+
+            _currentIndex--;
+            File.WriteAllText(DefaultPath, _currentIndex.ToString());
+            ChangeShowStr();
+            Repaint();
+        }
     }
 
     private void OnGUI()
