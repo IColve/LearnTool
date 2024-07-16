@@ -1,7 +1,7 @@
 入口顶部按钮Tools/LearnWindow
 
 需修改脚本中两个路径字段
-\n_defaultPath ： 用来存储阅读记录下标的文件，不需关注此文件。
+_defaultPath ： 用来存储阅读记录下标的文件，不需关注此文件。
 _learnPath ： 阅读的书籍路径。
 
 使用方式
